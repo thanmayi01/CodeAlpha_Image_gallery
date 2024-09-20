@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Image Gallery</title>
+    <link rel="stylesheet" href="task1.css">
+</head>
+<body>
+
+    <div class="gallery-container">
+        <div class="main-image">
+            <img id="currentImage" src="https://via.placeholder.com/600x400?text=Image+1" alt="Main Image">
+        </div>
+
+        <div class="thumbnails">
+            <img class="thumb" src="img1.jpeg" alt="Thumb 1" data-index="1" height="400px" weight="400px">
+            <img class="thumb" src="img2.jpeg" alt="Thumb 2" data-index="2" height="400px" weight="400px">
+            <img class="thumb" src="img3.jpeg" alt="Thumb 3" data-index="3" height="400px" weight="400px">
+            <img class="thumb" src="img4.jpeg" alt="Thumb 4" data-index="4" height="400px" weight="400px">
+            <img class="thumb" src="img5.jpeg" alt="Thumb 5" data-index="5" height="400px" weight="400px">
+        </div>
+
+        <div class="controls">
+            <button id="prevBtn">Previous</button>
+            <button id="nextBtn">Next</button>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightboxImage">
+    </div>
+
+    <script src="task1.js"></script>
+</body>
+</html>
+
